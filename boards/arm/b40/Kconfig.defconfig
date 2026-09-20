@@ -7,7 +7,7 @@ if BOARD_B40
 config ZMK_KEYBOARD_NAME
     default "b40"
 
-if USB
+if USB_DEVICE_STACK
 
 config USB_NRFX
     default y
@@ -15,7 +15,7 @@ config USB_NRFX
 config USB_DEVICE_STACK
     default y
 
-endif # USB
+endif # USB_DEVICE_STACK
 
 config BT_CTLR
     default BT
