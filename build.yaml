@@ -20,3 +20,7 @@
 ---
 include:
   - board: b40
+  - board: b40
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_LOG_LEVEL=4
+    artifact-name: b40-debug
