@@ -30,8 +30,9 @@ CONFIG_FLASH=y
 CONFIG_FLASH_PAGE_LAYOUT=y
 CONFIG_FLASH_MAP=y
 
-# Uncomment this if not using an external 32 kHz crystal
-# CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
+# Use the internal low-frequency oscillator. This avoids BLE failures on
+# Nice!Nano v2-compatible controllers with a missing or unreliable 32 kHz crystal.
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
 
 # Enable ZMK BLE and USB output
 CONFIG_ZMK_BLE=y
